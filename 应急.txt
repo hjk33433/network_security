@@ -1,0 +1,20 @@
+应急响应 
+1. 弱口令检查
+2. 检查用户是否新增 uid=0 awk -F: '$3==0{print $1}' 
+awk -F: '/\$1|\$6/{priint $1}' /ect/shadow
+sudo 
+cat /etc/sudoers | grep -v '^#\|^$^'
+2.1 远程登录用户有哪些
+w who uptime
+3. 账户禁用
+usermod -L 账户 passws -L 账户 解除 passwd -u
+4. 查看历史命令
+5. 查看异常端口
+微步分析病毒
+6. 检查进程 定位账号
+7. 检查开机自启 /etc/rc.local  ls -alt /etc/init.d /etc/rc.d/rc[0~6].d
+8. 定时任务
+9. 检查异常文件 隐藏文件 病毒文件 -->时间
+10. 检查系统日志
+11. 安装杀毒软件
+12. 安全检查脚本
